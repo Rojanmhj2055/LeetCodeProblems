@@ -12,6 +12,8 @@ height = [0,1,0,2,1,0,1,3,2,1,2,1]
 ans = 6
 
 ## Time Complexity = O(n), Space Complexity= O(n)
+#Trick is : Amount of water that can be trapped at index i is:
+##              Minimum (max height to the left till now,max height to the right)-height at index i
 def trap(height)->int:
     
     maxLeft=[0]*len(height)
